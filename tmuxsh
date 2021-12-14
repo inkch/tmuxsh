@@ -10,9 +10,9 @@ fi
 if ! tmux has-session -t "=$session_name" >/dev/null; then
 
   # By overriding this var, you can change the root of the bootstrap files.
-  TMUXSH_SESSIONS_ROOT=${TMUXSH_SESSIONS_ROOT:=$XDG_CONFIG_HOME/tmux/bootstraps}
+  TMUXSH_BOOTSTRAPS_ROOT=${TMUXSH_BOOTSTRAPS_ROOT:=$XDG_CONFIG_HOME/tmux/bootstraps}
 
-  bootstrap="$TMUXSH_SESSIONS_ROOT/$session_name".sh
+  bootstrap="$TMUXSH_BOOTSTRAPS_ROOT/$session_name".sh
   if [ -f "$bootstrap" ]; then
     tmux new-session -d -s "$session_name" sh "$bootstrap"
   else
