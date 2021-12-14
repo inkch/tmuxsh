@@ -12,6 +12,7 @@ script, so please read the source.
 $ tmuxsh <session_name>
 ```
 
+See `sample-bootstraps` and `sample.tmux.conf` for more information.
 
 
 ## Requirement
