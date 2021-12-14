@@ -1,6 +1,31 @@
 # tmuxsh
 
-A ridiculously simple tmux session attacher.
+A ridiculously simple tmux session attacher/switcher.
+
+I was wondering if I should write about how this works, but I decided not to. It's very simple shell
+script, so please read the source.
+
+
+## Usage
+
+```
+$ tmuxsh <session_name>
+```
+
+
+
+## Requirement
+
+Either the environment variable `$TMUXSH_BOOTSTRAPS_ROOT` or `$XDG_CONFIG_HOME`
+must be set.
+
+
+
+## Installation
+
+Any method is fine as long as `tmuxsh` can be executed.
+
+
 
 ## License
 
